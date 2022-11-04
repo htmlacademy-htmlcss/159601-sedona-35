@@ -196,7 +196,7 @@ body {
 
 .hotel-catalog {
   padding: 70px;
-  padding-top: 0px;
+  padding-top: 0;
 }
 
 .hotels-type {
@@ -263,8 +263,8 @@ body {
 
 .advantages-bar {
   width: 60px;
-  transform: rotate(90deg);
-  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  margin: auto;
 }
 
 .advantages-wrapper-large {
@@ -368,7 +368,7 @@ body {
   color: #000;
   width: 600px;
   height: 58px;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
   border: 0;
   font-size: 18px;
   line-height: 21px;
@@ -378,7 +378,7 @@ body {
 .subscribe-button {
   min-width: 200px;
   min-height: 60px;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
   font-size: 20px;
   line-height: 36px;
   border: 0;
@@ -448,7 +448,7 @@ body {
 .footer-phone {
   width: 677px;
   text-align: center;
-  margin: 0px;
+  margin: 0;
   margin-top: 5px;
 }
 
@@ -661,7 +661,7 @@ body {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  padding: 22px 0px 12px 15px;
+  padding: 22px 0 12px 15px;
   background: none;
   border: none;
   font-weight: 400;
