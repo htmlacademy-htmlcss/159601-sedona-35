@@ -185,6 +185,35 @@
         </a>
       </p>
     </footer>
+
+    <section class="modal-page">
+      <div class="modal-box">
+        <div class="modal-container">
+          <header class="modal-header">
+            <h2 class="modal-title">Поиск гостиниц в Седоне</h2>
+            <button class="button close-modal" aria-label="Закрыть окно">
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z" fill="black"/>
+              </svg>
+            </button>
+          </header>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label for="start-date" class="start-date">Дата заезда:</label>
+              <div class="input-box">
+                <input class="input-start-date" id="start-date" type="text" value="" placeholder="Укажите дату">
+                <button class="button input-calendar-start" aria-label="Открыть календарь для выбора даты." type="button"></button>
+                <span class="error-notification">Мы не можем отправить вас в прошлое.</span>
+              </div>
+            <label for="end-date" class="end-date">Дата выезда:</label>
+              <div class="input-box">
+                <input class="input-end-date" id="end-date" type="text" value="" placeholder="Укажите дату">
+                <button class="button input-calendar-end" aria-label="Открыть календарь для выбора даты." type="button"></button>
+                <span class="open-notification">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </div>
 </body>
 </html>

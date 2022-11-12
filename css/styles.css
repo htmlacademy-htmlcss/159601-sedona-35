@@ -639,19 +639,24 @@ body {
 
 .catalog-filter-label {
   position: relative;
-  flex-basis: 50%;
+  height: 48px;
 }
 
 .catalog-filter-label span {
   position: absolute;
-  right: 15px;
-  top: 12px;
-  font-size: 18px;
+  right: 20px;
+  top: 50%;
+  transform: translate(0, -50%);
   color: #000;
+  opacity: 0.3;
 }
 
-.catalog-filter-label:first-child {
-  border-right: 2px solid white;
+.catalog-filter-label:first-child .range-input {
+  border-radius: 4px 0 0 4px;
+}
+
+.catalog-filter-label:nth-child(2) .range-input {
+  border-radius: 0 4px 4px 0;
 }
 
 .catalog-filter-container {
@@ -707,28 +712,18 @@ body {
 
 .range-input {
   box-sizing: border-box;
-  width: 100%;
+  width: 143px;
   height: 100%;
-  padding: 22px 0 20px 15px;
+  padding: 12px 0 12px 20px;
   border: none;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
-}
-
-.range-input::-webkit-outer-spin-button,
-.range-input::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
 }
 
 .range-wrapper-inputs {
   display: flex;
-  width: 281px;
-  height: 48px;
-  border: 2px solid white;
-  border-radius: 4px;
-  margin-bottom: 30px;
+  width: 288px;
+  justify-content: space-between;
+  margin-bottom: 35px;
 }
 
 .range-scale  {
@@ -1054,49 +1049,34 @@ GREEN BUTTON */
   z-index: 1;
 }
 
-.modal {
-  position: relative;
-  margin: auto;
-  padding: 60px 70px 70px 70px;
-  background-color: #fff;
-}
-
-.modal-main {
-  width: 715px;
-  height: 561px;
-  border-radius: 30px;
+.modal-page-active{
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(242, 242, 242, 0.8);
+  z-index: 9001;
 }
 
 .modal-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  width: 575px;
+  margin: 0 auto;
 }
 
-.modal-close-button {
+.modal-box {
   position: absolute;
-  margin-top: 54px;
-  margin-right: 70px;
-  top: 0;
-  right: 0;
-  background-color: #F2F2F2;
-  background-image: url("../image/icons/close.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  width: 53px;
-  height: 53px;
-  border-radius: 50px;
-  border: none;
-}
-
-.modal-title {
-  margin: 0;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
+  top: 67px;
+  right: 50%;
+  transform: translateX(50%);
+  display: flex;
+  flex-direction: column;
+  width: 715px;
+  height: 561px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  padding-top: 42px;
+  padding-right: 5px;
 }
