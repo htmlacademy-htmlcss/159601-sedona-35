@@ -175,7 +175,6 @@ body {
   display: grid;
   gap: 18px;
   grid-template-columns: 340px 340px 340px;
-
   justify-items: center;
 }
 
@@ -184,13 +183,14 @@ body {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
-  min-height: 438px;
+  min-height: 405px;
   padding: 20px;
 }
 
 .hotels-card-title {
   margin: 0;
-  margin-top: 16px;
+  margin-top: 17px;
+  margin-bottom: 5px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -208,16 +208,21 @@ body {
 
 .hotels-price {
   margin: 0;
-  /* width: 140px; */
 }
 
 .hotel-card-stars {
-  height: 17px;
+  margin: 0;
+  height: 40px;
   width: 40px;
-  margin-top: 16px;
   background-image: url("../image/icons/star.svg");
   background-repeat: repeat-x;
   background-position: left center;
+}
+
+.star-box {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
 }
 
 .hotel-card-stars-3 {
@@ -346,8 +351,10 @@ body {
   margin-bottom: 40px;
 }
 .subscribe-description {
+  width: 530px;
+  margin: 0 auto;
   font-size: 22px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .subscribe-catalog {
@@ -362,29 +369,28 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 34px;
+  margin-bottom: 26px;
 }
 
 .subscribe-field {
   background-color: #F2F2F2;
   color: #000;
-  width: 600px;
-  height: 58px;
+  min-width: 435px;
+  height: 60px;
   border-radius: 4px 0 0 4px;
   border: 0;
   font-size: 18px;
   line-height: 21px;
-  padding-left: 22px;
+  padding-left: 20px;
 }
 
 .subscribe-button {
-  min-width: 200px;
   min-height: 60px;
   border-radius: 0 4px 4px 0;
   font-size: 20px;
   line-height: 36px;
   border: 0;
-  padding: 0;
+  padding: 10px 50px;
 }
 
 .subscribe-form {
@@ -516,7 +522,7 @@ body {
   color: #fff;
   padding: 35px 70px 70px 70px;
   margin-top: 5px;
-  margin-bottom: 44px;
+  margin-bottom: 43px;
 }
 
 .button-form {
@@ -788,7 +794,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .select-control {
@@ -858,13 +864,16 @@ body {
 .pagination {
   display: grid;
   grid-template-columns: repeat(6,55px);
-  gap: 10px;
+  gap: 15px;
 }
 
 .pagination-container {
+  margin-left: 70px;
+  margin-bottom: 155px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 405px;
 }
 
 .pagination-link {
@@ -879,6 +888,10 @@ body {
   box-sizing: border-box;
   text-align: center;
   border-radius: 4px
+}
+
+.pagination-item:nth-child(4) {
+  color: transparent;
 }
 
 .pagination-link:hover {
@@ -988,7 +1001,8 @@ GREEN BUTTON */
   font-size: 16px;
   line-height: 21px;
   padding: 10px;
-  border-radius: 4px
+  padding: 7px 10px;
+  border-radius: 4px;
 }
 
 .hotel-button {
@@ -997,7 +1011,7 @@ GREEN BUTTON */
 }
 
 .button-more {
-  width: 113px;
+  width: 120px;
 }
 
 .button-favorite {
