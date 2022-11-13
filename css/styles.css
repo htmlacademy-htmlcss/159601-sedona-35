@@ -610,7 +610,6 @@ body {
 
 .catalog-form {
   display: flex;
-  align-items: flex-start;
   position: relative;
 }
 
@@ -632,8 +631,8 @@ body {
   width: 290px;
   padding: 0;
   border: 0;
-  margin-top: 7px;
-  margin-left: 67px;
+  /* margin-top: 7px; */
+  margin-left: 47px;
   box-sizing: border-box;
 }
 
@@ -668,8 +667,6 @@ body {
   margin-right: 30px;
   border: none;
   padding: 0;
-  margin-left: 0;
-  margin-top: 8px;
 }
 
 .catalog-filter-item {
@@ -704,7 +701,7 @@ body {
 }
 
 .range-bar {
-  width: 233px;
+  width: 220px;
   height: 4px;
   background-color: rgba(255, 255, 255, 1);
   position: relative;
@@ -723,7 +720,7 @@ body {
   display: flex;
   width: 288px;
   justify-content: space-between;
-  margin-bottom: 35px;
+  margin-bottom: 45px;
 }
 
 .range-scale  {
@@ -749,12 +746,12 @@ body {
 
 .toggle-max {
   top: -8px;
-  left: 216px;
+  left: 205px;
 }
 
 .breadcrumbs {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 42px;
 }
 
 .breadcrumbs-link::before {
@@ -778,6 +775,7 @@ body {
 
 .found-descr {
   margin: 0;
+  margin-right: 153px;
   font-size: 30px;
   font-weight: 700;
   line-height: 39px;
@@ -795,7 +793,7 @@ body {
   min-width: 290px;
   border: 2px solid #e6e6e6;
   border-radius: 4px;
-  margin-right: 67px;
+  /* margin-right: 67px; */
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
@@ -1047,7 +1045,7 @@ GREEN BUTTON */
 }
 
 .modal-page-active{
-  display: block;
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
