@@ -135,7 +135,7 @@ body {
   url("../image/index-background.jpg") top center/cover no-repeat;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
   padding-top: 46px;
   min-height: 439px;
 }
@@ -162,7 +162,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000;
-  margin: 63px 240px 25px 240px;
+  margin: 63px 240px 0px 240px;
 }
 
 .main-description {
@@ -237,7 +237,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  margin-bottom: 90px;
+  margin-bottom: 100px;
 }
 
 .advantages-wrapper {
@@ -318,14 +318,14 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .search-description {
   width: 720px;
   font-size: 22px;
   line-height: 26px;
-  margin-bottom: 55px;
+  margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -369,7 +369,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 26px;
+  margin-bottom: 22px;
 }
 
 .subscribe-field {
@@ -1066,7 +1066,7 @@ GREEN BUTTON */
 /* MODAL PAGE */
 
 .modal-page{
-  display: block;
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
