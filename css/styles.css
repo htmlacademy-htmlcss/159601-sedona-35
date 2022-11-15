@@ -49,7 +49,7 @@ body {
   z-index: 1;
   display: flex;
   padding: 0 70px;
-  height: 70px;
+  height: 65px;
 }
 
 .navigation-index {
@@ -136,7 +136,7 @@ body {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 70px;
-  padding-top: 46px;
+  padding-top: 50px;
   min-height: 439px;
 }
 
@@ -153,7 +153,7 @@ body {
 
 .main-wrapper {
   text-align: center;
-  padding-bottom: 64px;
+  padding-bottom: 60px;
 }
 
 .main-subtitle {
@@ -236,7 +236,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 105px;
 }
 
 .advantages-wrapper {
@@ -309,22 +309,22 @@ body {
 
 .search {
   text-align: center;
-  margin-bottom: 93px;
+  margin-bottom: 95px;
 }
 
 .search-title {
+  margin: 0;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  margin-bottom: 20px;
 }
 
 .search-description {
   width: 720px;
   font-size: 22px;
   line-height: 26px;
-  margin-bottom: 50px;
+  margin-bottom: 53px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -332,7 +332,7 @@ body {
 .search-button {
   display: inline-block;
   box-sizing: border-box;
-  padding: 12px 10px;
+  padding: 10px 10px;
   line-height: 36px;
   min-width: 377px;
   min-height: 50px;
@@ -347,7 +347,7 @@ body {
   text-align: center;
   color: #fff;
   padding: 95px 200px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 .subscribe-description {
   width: 530px;
@@ -359,7 +359,7 @@ body {
 
 .subscribe-catalog {
   text-align: center;
-  margin-bottom: 141px;
+  margin-bottom: 150px;
 }
 
 .subscribe-title {
@@ -367,14 +367,14 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .subscribe-field {
   background-color: #F2F2F2;
   color: #000;
   min-width: 435px;
-  height: 60px;
+  height: 50px;
   border-radius: 4px 0 0 4px;
   border: 0;
   font-size: 18px;
@@ -383,7 +383,7 @@ body {
 }
 
 .subscribe-button {
-  min-height: 60px;
+  height: 52px;
   border-radius: 0 4px 4px 0;
   font-size: 20px;
   line-height: 36px;
@@ -777,7 +777,7 @@ body {
   margin: 0;
   font-size: 60px;
   line-height: 78px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .found-descr {
@@ -867,7 +867,7 @@ body {
 
 .pagination-container {
   margin-left: 70px;
-  margin-bottom: 155px;
+  margin-bottom: 162px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -888,8 +888,10 @@ body {
   border-radius: 4px
 }
 
-.pagination-item:nth-child(4) {
-  color: transparent;
+
+.pagination-link-clear {
+  background-color: transparent;
+  color: #000;
 }
 
 .pagination-link:hover {
@@ -1270,4 +1272,59 @@ GREEN BUTTON */
   font-weight: 700;
   font-size: 18px;
   line-height: 2.22px;
+}
+
+.minus-button {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  border: none;
+  background: transparent;
+}
+
+.minus-button svg {
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 0.3;
+}
+
+.minus-button:hover svg {
+  opacity: 1;
+}
+
+.minus-button:focus-visible {
+  opacity: 1;
+  outline: 3px solid #83b3d3;
+  outline-offset: 0;
+  border-radius: 4px;
+}
+
+.minus-button:active svg {
+  opacity: 0.2;
+}
+
+.plus-button {
+  position: absolute;
+  top: 15px;
+  right: 2px;
+  border: none;
+  background: transparent;
+}
+
+.plus-button svg {
+  opacity: 0.3;
+}
+
+.plus-button:hover svg {
+  opacity: 1;
+}
+
+.plus-button:active svg {
+  opacity: 0.2;
+}
+
+.plus-button:focus-visible {
+  opacity: 1;
+  outline: 3px solid #83b3d3;
+  border-radius: 4px;
 }
