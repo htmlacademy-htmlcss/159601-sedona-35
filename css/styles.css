@@ -162,13 +162,12 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000;
-  margin: 63px 240px 0px 240px;
+  margin: 63px 240px 0 240px;
 }
 
 .main-description {
   font-size: 22px;
   line-height: 36px;
-  /* margin-bottom: 6px; */
 }
 
 .hotels-list {
@@ -1064,7 +1063,7 @@ GREEN BUTTON */
 /* MODAL PAGE */
 
 .modal-page{
-  display: block;
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -1211,4 +1210,64 @@ GREEN BUTTON */
   outline: 3px solid #83b3d3;
   outline-offset: 4px;
   border-radius: 3px;
+}
+
+.input-end-date {
+  grid-column: 2/-1;
+  width: 420px;
+  height: 50px;
+  background: #f2f2f2;
+  border-radius: 4px;
+  border: none;
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2.22px;
+  margin-left: 11px;
+  padding-left: 19px;
+  margin-bottom: 13px;
+}
+
+.input-calendar-end {
+  position: absolute;
+  right: 18px;
+  bottom: 32px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../images/icons/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+.open-notification {
+  display: none;
+  padding-left: 13px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2.5px;
+  color: #333333;
+}
+
+.adults-lebel {
+  grid-column: 1/2;
+}
+
+.adults-box {
+  position: relative;
+  grid-column: 2/3;
+  margin-left: 13px;
+}
+
+.adults-number {
+  width: 133px;
+  height: 50px;
+  border: none;
+  background: #f2f2f2;
+  text-align: center;
+  border-radius: 4px;
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2.22px;
 }
