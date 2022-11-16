@@ -1067,7 +1067,7 @@ GREEN BUTTON */
 /* MODAL PAGE */
 
 .modal-page{
-  display: block;
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -1076,6 +1076,10 @@ GREEN BUTTON */
   background: rgba(242, 242, 242, 0.8);
   z-index: 9001;
 }
+
+.modal-page-active {
+  display: block;
+ }
 
 .modal-container {
   width: 575px;
