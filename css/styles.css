@@ -203,6 +203,7 @@ body {
 .hotels-type {
   width: 160px;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .hotels-price {
@@ -233,14 +234,13 @@ body {
 }
 
 .advantages-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   text-align: center;
   margin-bottom: 105px;
 }
 
 .advantages-wrapper {
-  width: 33.333%;
   padding-top: 95px;
   padding-bottom: 92px;
   max-height: 197px;
@@ -274,9 +274,10 @@ body {
 }
 
 .advantages-wrapper-large {
-  display: flex;
+  display: grid;
+  grid-column: span 3;
+  grid-template-columns: 1fr 2fr;
   width: 100%;
-  flex-wrap: wrap;
 }
 
 .advantages-wrapper-blue {
@@ -1065,7 +1066,7 @@ GREEN BUTTON */
 /* MODAL PAGE */
 
 .modal-page{
-  display: none;
+  display: block;
   position: fixed;
   top: 0;
   right: 0;
@@ -1214,6 +1215,11 @@ GREEN BUTTON */
   border-radius: 3px;
 }
 
+.end-date {
+  grid-column: 1/2;
+  margin-bottom: 13px;
+}
+
 .input-end-date {
   grid-column: 2/-1;
   width: 420px;
@@ -1243,13 +1249,17 @@ GREEN BUTTON */
 }
 
 .open-notification {
-  display: none;
+  display: block;
   padding-left: 13px;
   font-weight: 400;
   font-size: 16px;
   line-height: 2.5px;
   color: #333333;
 }
+
+.open-notification-active {
+  display: block;
+ }
 
 .adults-lebel {
   grid-column: 1/2;
@@ -1327,4 +1337,118 @@ GREEN BUTTON */
   opacity: 1;
   outline: 3px solid #83b3d3;
   border-radius: 4px;
+}
+
+.children-box .plus-button {
+  position: absolute;
+  top: 15px;
+  right: 13px;
+  border: none;
+}
+
+.children-label {
+  display: flex;
+  align-items: center;
+  grid-column: 3/4;
+  margin-left: 9px;
+  justify-self: center;
+  margin-right: -38px;
+}
+
+.info-children {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #83b3d3;
+  border: none;
+  border-radius: 50%;
+  margin-left: 9px;
+}
+
+.notification-children {
+  position: relative;
+  display: block;
+  z-index: 1;
+  width: 256px;
+  height: 143px;
+  top: 26px;
+  left: -119px;
+  background-color: #333333;
+  box-shadow: 0px 15px 30px rgb(0 0 0 / 30%);
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.3;
+  color: #ffffff;
+  text-align: left;
+  padding: 20px 0px 18px 22px;
+  transform: scale(0);
+  transition: 0.155s linear;
+  cursor: pointer;
+}
+
+.info-children:hover .notification-children {
+  transform: scale(1);
+}
+
+.notification-children::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: -31px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 19px;
+  height: 9px;
+  border: 20px solid transparent;
+  border-bottom: 20px solid #333333;
+}
+
+.children-box {
+  position: relative;
+  grid-column: 4/5;
+}
+
+.children-number {
+  width: 133px;
+  height: 50px;
+  border: none;
+  background: #f2f2f2;
+  text-align: center;
+  border-radius: 4px;
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2.22px;
+}
+
+.button-modal-form {
+  grid-column: 1/-1;
+  width: 575px;
+  height: 60px;
+  background-color: #83b3d3;
+  border-radius: 10px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 2;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 13px;
+  padding-left: 15px;
+}
+
+.button-modal-form:hover {
+  background-color: #68a2ca;
+}
+
+.button-modal-form:focus-visible {
+  background-color: #68a2ca;
+  outline: 3px solid #756257;
+}
+
+.button-modal-form:active {
+  background-color: #68a2ca;
+  color: rgba(255, 255, 255, 0.3);
 }
