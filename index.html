@@ -213,11 +213,9 @@
             <label class="adults-label" for="adults-number">Взрослые:</label>
               <div class="adults-box">
                 <button class="minus-button" type="button" aria-label="Уменьшить количество взрослых">
-                  <svg class="minus-svg" width="13" height="1" viewBox="0 0 13 1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 0L0 1L13 1V0L0 0Z" fill="currentColor"/>
-                  </svg>
+
                 </button>
-                <input class="adults-numder" id="adults-number" type="number" value="2" step="1" min="1" max="4">
+                <input class="adults-number" id="adults-number" type="number" value="2" step="1" min="1" max="4">
                 <button class="plus-button" type="button" aria-label="Увеличить количество взрослых.">
                   <svg width="13" height="13" viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <g>
@@ -226,8 +224,8 @@
                  </svg>
                 </button>
               </div>
-            <label class="children-label" for="children-numder">Дети:
-              <button class="info-children" id="children-numder" type="button">
+            <label class="children-label" for="children-number">Дети:
+              <button class="info-children" id="children-number" type="button">
                 <svg width="1" height="9" viewBox="0 0 1 9" fill="white" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_18711_289)">
                     <path d="M0 9H1L1 3H0L0 9Z" fill="white"/>
@@ -244,9 +242,11 @@
               </button>
             </label>
             <div class="children-box">
-              <button class="minus-button" type="button">
-                <svg width="13" height="1" viewBox="0 0 13 1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <button class="minus-button" type="button" aria-label="Уменьшить количество взрослых.">
+                <svg class="minus-svg" width="13" height="1" viewBox="0 0 13 1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <g>
                   <path d="M0 0L0 1L13 1V0L0 0Z" fill="currentColor"/>
+                  </g>
                 </svg>
               </button>
               <input class="children-number" type="number" value="1" step="1" min="0" max="4">
