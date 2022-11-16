@@ -526,7 +526,7 @@ body {
 
 .button-form {
   margin-left: auto;
-  margin-top: 55px;
+  margin-top: 60px;
 }
 
 .check-box {
@@ -997,10 +997,19 @@ GREEN BUTTON */
 }
 
 .button-more,
-.button-favorite,
+.button-favorite {
+  display: inline-block;
+  width: 133px;
+  padding: 8px 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
 .button-check {
   font-size: 16px;
-  line-height: 21px;
   padding: 7px 10px;
   border-radius: 4px;
 }
@@ -1008,14 +1017,6 @@ GREEN BUTTON */
 .hotel-button {
   display: flex;
   justify-content: space-between;
-}
-
-.button-more {
-  width: 120px;
-}
-
-.button-favorite {
-  width: 120px;
 }
 
 .button-clear {
@@ -1028,7 +1029,7 @@ GREEN BUTTON */
   width: 190px;
   height: 35px;
   display: block;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .button-reset {
@@ -1066,7 +1067,7 @@ GREEN BUTTON */
 /* MODAL PAGE */
 
 .modal-page{
-  display: block;
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
