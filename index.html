@@ -90,7 +90,7 @@
             <div class="advantages-photo">
               <img src="image/mountain.jpg" width="800" height="384" alt="Мост Дьявола">
             </div>
-            <div class="advantages-wrapper advantages-wrapper-blue">
+            <div class="advantages-bridge">
               <h3 class="advantages-title advantages-title-white">Там есть <br >мост дьявола</h3>
               <div class="advantages-bar"></div>
               <p class="advantages-descriptions">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -185,7 +185,7 @@
         </a>
       </p>
     </footer>
-   <!--Для появления модального окна нужно section добавить класс modal-page-active -->
+   <!--Для появления модального окна нужно section добавить класс modal-page-on-->
     <section class="modal-page">
       <div class="modal-box">
         <div class="modal-container">
@@ -212,8 +212,12 @@
               </div>
             <label class="adults-label" for="adults-number">Взрослые:</label>
               <div class="adults-box">
-                <button class="minus-button" type="button" aria-label="Уменьшить количество взрослых">
-
+                <button class="minus-button" type="button" aria-label="Уменьшить количество взрослых.">
+                  <svg class="minus-svg" width="13" height="1" viewBox="0 0 13 1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                    <path d="M0 0L0 1L13 1V0L0 0Z" fill="currentColor"></path>
+                    </g>
+                  </svg>
                 </button>
                 <input class="adults-number" id="adults-number" type="number" value="2" step="1" min="1" max="4">
                 <button class="plus-button" type="button" aria-label="Увеличить количество взрослых.">
