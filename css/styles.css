@@ -167,9 +167,8 @@ body {
 
 .hotels-list {
   display: grid;
-  gap: 18px;
+  gap: 20px;
   grid-template-columns: 340px 340px 340px;
-  justify-items: center;
 }
 
 .hotels-card {
@@ -177,28 +176,31 @@ body {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
-  min-height: 405px;
+  min-height: 399px;
   padding: 20px;
 }
 
 .hotels-card-title {
   margin: 0;
-  margin-top: 17px;
-  margin-bottom: 5px;
-  font-weight: 700;
+  margin-bottom: 10px;
   font-size: 24px;
   line-height: 28px;
+
+
+
+
+/* Headings/Heading 3 none case */
 }
 
 .hotel-catalog {
   padding: 70px;
-  padding-top: 0;
+  padding-top: 0px;
 }
 
 .hotels-type {
   width: 160px;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 .hotels-price {
@@ -422,18 +424,19 @@ body {
 }
 
 .hotel-rate {
-  background-color: #F2F2F2;
-  color: #333;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 140px;
+  height: 36px;
   font-size: 16px;
+  line-height: inherit;
   text-transform: uppercase;
-  width: 120px;
-  padding: 10px;
+  background: #f2f2f2;
   border-radius: 4px;
-  text-align: center;
 }
 
 .card-link {
-  font-weight: 700;
   font-size: 24px;
   line-height: 31px;
   color: #000;
@@ -442,6 +445,7 @@ body {
 
 .card-image {
   object-fit: cover;
+  margin-bottom: 6px;
 }
 
 .page-footer {
@@ -541,13 +545,13 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
   color: #fff;
-  padding: 35px 70px 70px 70px;
-  margin-bottom: 43px;
+  padding: 35px 70px 60px 70px;
+  margin-bottom: 50px;
 }
 
 .button-form {
   margin-left: auto;
-  margin-top: 60px;
+  margin-top: 57px;
 }
 
 .check-box {
@@ -561,7 +565,7 @@ body {
 
 .control-input {
   appearance: none;
-  margin-left: 33px;
+  margin-left: 32px;
 }
 
 .control-input:checked + .check-box {
@@ -588,7 +592,7 @@ body {
 .radio {
   position: relative;
   display: block;
-  padding-left: 39px;
+  padding-left: 35px;
 }
 
 .radio-mark {
@@ -643,10 +647,11 @@ body {
 
 .catalog-filter-title {
   border: 0;
+  padding: 0;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 }
 
 .catalog-price-title {
@@ -659,8 +664,7 @@ body {
   width: 290px;
   padding: 0;
   border: 0;
-  /* margin-top: 7px; */
-  margin-left: 47px;
+  margin-left: 45px;
   box-sizing: border-box;
 }
 
@@ -693,16 +697,17 @@ body {
 
 .catalog-filter-service {
   margin-right: 30px;
+  margin-left: 0px;
   border: none;
   padding: 0;
 }
 
 .catalog-filter-item {
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 }
 
 .catalog-filter-list {
-  margin-right: 71px;
+  margin-right: 77px;
 }
 
 .price-cost {
@@ -791,7 +796,7 @@ body {
 
 .breadcrumbs-link {
   font-size: 16px;
-  padding-right: 26px;
+  padding-right: 28px;
   color: #fff;
 }
 
@@ -799,7 +804,7 @@ body {
   margin: 0;
   font-size: 60px;
   line-height: 78px;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .found-descr {
@@ -814,7 +819,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 37px;
+  margin-bottom: 40px;
   min-width: 397px;
 }
 
@@ -825,7 +830,7 @@ body {
   border: 2px solid #e6e6e6;
   border-radius: 4px;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: inherit;
   line-height: 23px;
   font-family: inherit;
   color: #333333;
@@ -834,7 +839,7 @@ body {
   background-repeat: no-repeat;
   background-position: right 21px center;
   background-color: #ffffff;
-  padding: 5px 12px;
+  padding: 11px;
 }
 
 .select-control:focus {
@@ -878,7 +883,8 @@ body {
 
 .sort-icon {
   display: block;
-  width: 50px;
+  width: 48px;
+  /* height: 48px; */
 }
 
 .pagination {
@@ -1017,22 +1023,18 @@ GREEN BUTTON */
   background-color: #E5E5E5;
 }
 
-.button-more,
-.button-favorite {
-  display: inline-block;
-  width: 133px;
-  padding: 8px 5px;
-  font-weight: 700;
+.button-favorite,
+.button-more {
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  display: flex;
+  align-items: center;
+  width: 130px;
+  min-height: 20px;
+  padding: 8px 5px;
+  padding-bottom: 12px;
   border-radius: 4px;
-}
-
-.button-check {
-  font-size: 16px;
-  padding: 7px 10px;
-  border-radius: 4px;
+  justify-content: space-around;
 }
 
 .hotel-button {
@@ -1046,20 +1048,35 @@ GREEN BUTTON */
 }
 
 .button-check {
+  display: flex;
+  flex-wrap: wrap;
   border: none;
   width: 190px;
-  height: 35px;
-  display: block;
-  margin-bottom: 39px;
+  min-height: 35px;
+  font-size: 16px;
+  padding: 7px 10px;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .button-reset {
   border: none;
   background-color: transparent;
-  color: #fff;
-  margin-left: 60px;
+  margin-left: 58px;
   padding: 0;
+
+/* Buttons/Button small */
+  font-family: inherit;
+  font-weight: 700;
   font-size: 16px;
+  line-height: 20px;
+/* identical to box height, or 125% */
+  text-transform: uppercase;
+
+/* Texts/background/deafault */
+  color: #ffffff;
 }
 
 .button-reset:hover {
