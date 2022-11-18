@@ -194,7 +194,7 @@ body {
 
 .hotel-catalog {
   padding: 70px;
-  padding-top: 0px;
+  padding-top: 0;
 }
 
 .hotels-type {
@@ -325,7 +325,7 @@ body {
 }
 
 .advantages-icon-box {
-  background: center top 89px/74px 70px no-repeat url("../image/icons/box.svg")
+  background: center top 89px/74px 70px no-repeat url("../image/icons/box.svg");
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -697,7 +697,7 @@ body {
 
 .catalog-filter-service {
   margin-right: 30px;
-  margin-left: 0px;
+  margin-left: 0;
   border: none;
   padding: 0;
 }
@@ -888,18 +888,16 @@ body {
 }
 
 .pagination {
-  display: grid;
-  grid-template-columns: repeat(6,55px);
-  gap: 15px;
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
 }
 
 .pagination-container {
-  margin-left: 70px;
-  margin-bottom: 162px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 405px;
+  margin-left: 70px;
+  margin-bottom: 160px;
+  width: 400px;
 }
 
 .pagination-link {
@@ -915,7 +913,9 @@ body {
   text-align: center;
   border-radius: 4px
 }
-
+.pagination-item {
+  width: 60px;
+}
 
 .pagination-link-clear {
   background-color: transparent;
@@ -932,7 +932,7 @@ body {
 
 .pagination-link-current {
   background-color: #F2F2F2;
-  color: #000
+  color: #000;
 }
 
 .pagination-link-current:hover {
