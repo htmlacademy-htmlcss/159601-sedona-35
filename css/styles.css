@@ -119,12 +119,12 @@ body {
   min-width: 100%;
   position: relative;
   color: #000;
-  background-color: #fff;
   background: url("../image/icons/wave.svg") bottom center/100% no-repeat,
   url("../image/index-background.jpg") top center/cover no-repeat;
   text-align: center;
   margin: 0 auto;
-  padding-bottom: 70px;
+  background-color: #8DAAB9;
+  margin-bottom: 70px;
   padding-top: 50px;
   min-height: 430px;
 }
@@ -361,7 +361,8 @@ body {
 .subscribe {
   background-image: url("../image/Subscribe.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: auto;
+  background-color: #8DABB9;
   text-align: center;
   color: #fff;
   padding: 95px 200px;
@@ -540,6 +541,7 @@ body {
 
 .filter-img {
   background-image: url("../image/catalog-background.jpg");
+  background-color: #81a98b;
   background-size: 100%;
   background-repeat: no-repeat;
   color: #fff;
@@ -643,6 +645,7 @@ body {
 
 .catalog-form {
   display: flex;
+  flex-wrap: wrap;
   position: relative;
 }
 
@@ -697,7 +700,9 @@ body {
 }
 
 .catalog-filter-service {
+  display: flex;
   margin-right: 30px;
+  min-width: 190px;
   margin-left: 0;
   border: none;
   padding: 0;
@@ -805,7 +810,6 @@ body {
   margin: 0;
   font-size: 60px;
   line-height: 78px;
-  margin-bottom: 7px;
 }
 
 .found-descr {
